@@ -1,0 +1,1012 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPU Country list\n"
+"POT-Creation-Date: 2015-05-12 21:00+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Darklg <darklg.blog@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ../.\n"
+
+#: .././wpucountrylist.php:35
+msgid "Andorra"
+msgstr "Andorra"
+
+#: .././wpucountrylist.php:39
+msgid "United Arab Emirates"
+msgstr "Emiratos Árabes Unidos"
+
+#: .././wpucountrylist.php:43
+msgid "Afghanistan"
+msgstr "Afganistán"
+
+#: .././wpucountrylist.php:47
+msgid "Antigua and Barbuda"
+msgstr "Antigua y Barbuda"
+
+#: .././wpucountrylist.php:51
+msgid "Anguilla"
+msgstr "Anguila"
+
+#: .././wpucountrylist.php:55
+msgid "Albania"
+msgstr "Albania"
+
+#: .././wpucountrylist.php:59
+msgid "Armenia"
+msgstr "Armenia"
+
+#: .././wpucountrylist.php:63
+msgid "Angola"
+msgstr "Angola"
+
+#: .././wpucountrylist.php:67
+msgid "Antarctica"
+msgstr "Antártida"
+
+#: .././wpucountrylist.php:71
+msgid "Argentina"
+msgstr "Argentina"
+
+#: .././wpucountrylist.php:75
+msgid "American Samoa"
+msgstr "Samoa Americana"
+
+#: .././wpucountrylist.php:79
+msgid "Austria"
+msgstr "Austria"
+
+#: .././wpucountrylist.php:83
+msgid "Australia"
+msgstr "Australia"
+
+#: .././wpucountrylist.php:87
+msgid "Aruba"
+msgstr "Aruba"
+
+#: .././wpucountrylist.php:91
+msgid "Åland Islands"
+msgstr "Islas Åland"
+
+#: .././wpucountrylist.php:95
+msgid "Azerbaijan"
+msgstr "Azerbaiyán"
+
+#: .././wpucountrylist.php:99
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia-Herzegovina"
+
+#: .././wpucountrylist.php:103
+msgid "Barbados"
+msgstr "Barbados"
+
+#: .././wpucountrylist.php:107
+msgid "Bangladesh"
+msgstr "Bangladés"
+
+#: .././wpucountrylist.php:111
+msgid "Belgium"
+msgstr "Bélgica"
+
+#: .././wpucountrylist.php:115
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: .././wpucountrylist.php:119
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: .././wpucountrylist.php:123
+msgid "Bahrain"
+msgstr "Baréin"
+
+#: .././wpucountrylist.php:127
+msgid "Burundi"
+msgstr "Burundi"
+
+#: .././wpucountrylist.php:131
+msgid "Benin"
+msgstr "Benín"
+
+#: .././wpucountrylist.php:135
+msgid "Saint Barthélemy"
+msgstr "San Bartolomé"
+
+#: .././wpucountrylist.php:139
+msgid "Bermuda"
+msgstr "Bermudas"
+
+#: .././wpucountrylist.php:143
+msgid "Brunei Darussalam"
+msgstr "Brunéi"
+
+#: .././wpucountrylist.php:147
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: .././wpucountrylist.php:151
+msgid "Caribbean Netherlands"
+msgstr "Caribe neerlandés"
+
+#: .././wpucountrylist.php:155
+msgid "Brazil"
+msgstr "Brasil"
+
+#: .././wpucountrylist.php:159
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: .././wpucountrylist.php:163
+msgid "Bhutan"
+msgstr "Bután"
+
+#: .././wpucountrylist.php:167
+msgid "Bouvet Island"
+msgstr "Isla Bouvet"
+
+#: .././wpucountrylist.php:171
+msgid "Botswana"
+msgstr "Botsuana"
+
+#: .././wpucountrylist.php:175
+msgid "Belarus"
+msgstr "Bielorrusia"
+
+#: .././wpucountrylist.php:179
+msgid "Belize"
+msgstr "Belice"
+
+#: .././wpucountrylist.php:183
+msgid "Canada"
+msgstr "Canadá"
+
+#: .././wpucountrylist.php:187
+msgid "Cocos (Keeling) Islands"
+msgstr "Islas Cocos"
+
+#: .././wpucountrylist.php:191
+msgid "Democratic Republic of Congo"
+msgstr "República Democrática del Congo"
+
+#: .././wpucountrylist.php:195
+msgid "Central African Republic"
+msgstr "República Centroafricana"
+
+#: .././wpucountrylist.php:199
+msgid "Congo"
+msgstr "República del Congo"
+
+#: .././wpucountrylist.php:203
+msgid "Switzerland"
+msgstr "Suiza"
+
+#: .././wpucountrylist.php:207
+msgid "Côte d'Ivoire"
+msgstr "Costa de Marfil"
+
+#: .././wpucountrylist.php:211
+msgid "Cook Islands"
+msgstr "Islas Cook"
+
+#: .././wpucountrylist.php:215
+msgid "Chile"
+msgstr "Chile"
+
+#: .././wpucountrylist.php:219
+msgid "Cameroon"
+msgstr "Camerún"
+
+#: .././wpucountrylist.php:223
+msgid "China"
+msgstr "China"
+
+#: .././wpucountrylist.php:227
+msgid "Colombia"
+msgstr "Colombia"
+
+#: .././wpucountrylist.php:231
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: .././wpucountrylist.php:235
+msgid "Cuba"
+msgstr "Cuba"
+
+#: .././wpucountrylist.php:239
+msgid "Cape Verde"
+msgstr "Cabo Verde"
+
+#: .././wpucountrylist.php:243
+msgid "Curaçao"
+msgstr "Curazao"
+
+#: .././wpucountrylist.php:247
+msgid "Christmas Island"
+msgstr "Isla Christmas"
+
+#: .././wpucountrylist.php:251
+msgid "Cyprus"
+msgstr "Chipre"
+
+#: .././wpucountrylist.php:255
+msgid "Czech Republic"
+msgstr "República Checa"
+
+#: .././wpucountrylist.php:259
+msgid "Germany"
+msgstr "Alemania"
+
+#: .././wpucountrylist.php:263
+msgid "Djibouti"
+msgstr "Yibuti"
+
+#: .././wpucountrylist.php:267
+msgid "Denmark"
+msgstr "Dinamarca"
+
+#: .././wpucountrylist.php:271
+msgid "Dominica"
+msgstr "Dominica"
+
+#: .././wpucountrylist.php:275
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#: .././wpucountrylist.php:279
+msgid "Algeria"
+msgstr "Argelia"
+
+#: .././wpucountrylist.php:283
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: .././wpucountrylist.php:287
+msgid "Estonia"
+msgstr "Estonia"
+
+#: .././wpucountrylist.php:291
+msgid "Egypt"
+msgstr "Egipto"
+
+#: .././wpucountrylist.php:295
+msgid "Western Sahara"
+msgstr "Sáhara Occidental"
+
+#: .././wpucountrylist.php:299
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: .././wpucountrylist.php:303
+msgid "Spain"
+msgstr "España"
+
+#: .././wpucountrylist.php:307
+msgid "Ethiopia"
+msgstr "Etiopía"
+
+#: .././wpucountrylist.php:311
+msgid "Finland"
+msgstr "Finlandia"
+
+#: .././wpucountrylist.php:315
+msgid "Fiji"
+msgstr "Fiyi"
+
+#: .././wpucountrylist.php:319
+msgid "Falkland Islands"
+msgstr "Islas Malvinas"
+
+#: .././wpucountrylist.php:323
+msgid "Federated States of Micronesia"
+msgstr "Micronesia"
+
+#: .././wpucountrylist.php:327
+msgid "Faroe Islands"
+msgstr "Islas Feroe"
+
+#: .././wpucountrylist.php:331
+msgid "France"
+msgstr "Francia"
+
+#: .././wpucountrylist.php:335
+msgid "Gabon"
+msgstr "Gabón"
+
+#: .././wpucountrylist.php:339
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+#: .././wpucountrylist.php:343
+msgid "Grenada"
+msgstr "Granada"
+
+#: .././wpucountrylist.php:347
+msgid "Georgia"
+msgstr "Georgia"
+
+#: .././wpucountrylist.php:351
+msgid "French Guiana"
+msgstr "Guayana Francesa"
+
+#: .././wpucountrylist.php:355
+msgid "Guernsey"
+msgstr "Guernesey"
+
+#: .././wpucountrylist.php:359
+msgid "Ghana"
+msgstr "Ghana"
+
+#: .././wpucountrylist.php:363
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: .././wpucountrylist.php:367
+msgid "Greenland"
+msgstr "Groenlandia"
+
+#: .././wpucountrylist.php:371
+msgid "Gambia"
+msgstr "Gambia"
+
+#: .././wpucountrylist.php:375
+msgid "Guinea"
+msgstr "Guinea"
+
+#: .././wpucountrylist.php:379
+msgid "Guadeloupe"
+msgstr "Guadalupe"
+
+#: .././wpucountrylist.php:383
+msgid "Equatorial Guinea"
+msgstr "Guinea Ecuatorial"
+
+#: .././wpucountrylist.php:387
+msgid "Greece"
+msgstr "Grecia"
+
+#: .././wpucountrylist.php:391
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Islas Georgia del Sur y Sandwich del Sur"
+
+#: .././wpucountrylist.php:395
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: .././wpucountrylist.php:399
+msgid "Guam"
+msgstr "Guam"
+
+#: .././wpucountrylist.php:403
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bisáu"
+
+#: .././wpucountrylist.php:407
+msgid "Guyana"
+msgstr "Guyana"
+
+#: .././wpucountrylist.php:411
+msgid "Hong Kong"
+msgstr "RAE de Hong Kong (China)"
+
+#: .././wpucountrylist.php:415
+msgid "Heard and McDonald Islands"
+msgstr "Islas Heard y McDonald"
+
+#: .././wpucountrylist.php:419
+msgid "Honduras"
+msgstr "Honduras"
+
+#: .././wpucountrylist.php:423
+msgid "Croatia"
+msgstr "Croacia"
+
+#: .././wpucountrylist.php:427
+msgid "Haiti"
+msgstr "Haití"
+
+#: .././wpucountrylist.php:431
+msgid "Hungary"
+msgstr "Hungría"
+
+#: .././wpucountrylist.php:435
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: .././wpucountrylist.php:439
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: .././wpucountrylist.php:443
+msgid "Israel"
+msgstr "Israel"
+
+#: .././wpucountrylist.php:447
+msgid "Isle of Man"
+msgstr "Isla de Man"
+
+#: .././wpucountrylist.php:451
+msgid "India"
+msgstr "India"
+
+#: .././wpucountrylist.php:455
+msgid "British Indian Ocean Territory"
+msgstr "Territorio Británico del Océano Índico"
+
+#: .././wpucountrylist.php:459
+msgid "Iraq"
+msgstr "Iraq"
+
+#: .././wpucountrylist.php:463
+msgid "Iran"
+msgstr "Irán"
+
+#: .././wpucountrylist.php:467
+msgid "Iceland"
+msgstr "Islandia"
+
+#: .././wpucountrylist.php:471
+msgid "Italy"
+msgstr "Italia"
+
+#: .././wpucountrylist.php:475
+msgid "Jersey"
+msgstr "Jersey"
+
+#: .././wpucountrylist.php:479
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: .././wpucountrylist.php:483
+msgid "Jordan"
+msgstr "Jordania"
+
+#: .././wpucountrylist.php:487
+msgid "Japan"
+msgstr "Japón"
+
+#: .././wpucountrylist.php:491
+msgid "Kenya"
+msgstr "Kenia"
+
+#: .././wpucountrylist.php:495
+msgid "Kyrgyzstan"
+msgstr "Kirguistán"
+
+#: .././wpucountrylist.php:499
+msgid "Cambodia"
+msgstr "Camboya"
+
+#: .././wpucountrylist.php:503
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: .././wpucountrylist.php:507
+msgid "Comoros"
+msgstr "Comoras"
+
+#: .././wpucountrylist.php:511
+msgid "Saint Kitts and Nevis"
+msgstr "San Cristóbal y Nieves"
+
+#: .././wpucountrylist.php:515
+msgid "North Korea"
+msgstr "Corea del Norte"
+
+#: .././wpucountrylist.php:519
+msgid "South Korea"
+msgstr "Corea del Sur"
+
+#: .././wpucountrylist.php:523
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: .././wpucountrylist.php:527
+msgid "Cayman Islands"
+msgstr "Islas Caimán"
+
+#: .././wpucountrylist.php:531
+msgid "Kazakhstan"
+msgstr "Kazajistán"
+
+#: .././wpucountrylist.php:535
+msgid "Lao People's Democratic Republic"
+msgstr "Laos"
+
+#: .././wpucountrylist.php:539
+msgid "Lebanon"
+msgstr "Líbano"
+
+#: .././wpucountrylist.php:543
+msgid "Saint Lucia"
+msgstr "Santa Lucía"
+
+#: .././wpucountrylist.php:547
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: .././wpucountrylist.php:551
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: .././wpucountrylist.php:555
+msgid "Liberia"
+msgstr "Liberia"
+
+#: .././wpucountrylist.php:559
+msgid "Lesotho"
+msgstr "Lesoto"
+
+#: .././wpucountrylist.php:563
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: .././wpucountrylist.php:567
+msgid "Luxembourg"
+msgstr "Luxemburgo"
+
+#: .././wpucountrylist.php:571
+msgid "Latvia"
+msgstr "Letonia"
+
+#: .././wpucountrylist.php:575
+msgid "Libya"
+msgstr "Libia"
+
+#: .././wpucountrylist.php:579
+msgid "Morocco"
+msgstr "Marruecos"
+
+#: .././wpucountrylist.php:583
+msgid "Monaco"
+msgstr "Mónaco"
+
+#: .././wpucountrylist.php:587
+msgid "Moldova"
+msgstr "Moldavia"
+
+#: .././wpucountrylist.php:591
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#: .././wpucountrylist.php:595
+msgid "Saint-Martin (France)"
+msgstr "San Martín"
+
+#: .././wpucountrylist.php:599
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: .././wpucountrylist.php:603
+msgid "Marshall Islands"
+msgstr "Islas Marshall"
+
+#: .././wpucountrylist.php:607
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: .././wpucountrylist.php:611
+msgid "Mali"
+msgstr "Mali"
+
+#: .././wpucountrylist.php:615
+msgid "Myanmar"
+msgstr "Myanmar (Birmania)"
+
+#: .././wpucountrylist.php:619
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: .././wpucountrylist.php:623
+msgid "Macau"
+msgstr "RAE de Macao (China)"
+
+#: .././wpucountrylist.php:627
+msgid "Northern Mariana Islands"
+msgstr "Islas Marianas del Norte"
+
+#: .././wpucountrylist.php:631
+msgid "Martinique"
+msgstr "Martinica"
+
+#: .././wpucountrylist.php:635
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: .././wpucountrylist.php:639
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: .././wpucountrylist.php:643
+msgid "Malta"
+msgstr "Malta"
+
+#: .././wpucountrylist.php:647
+msgid "Mauritius"
+msgstr "Mauricio"
+
+#: .././wpucountrylist.php:651
+msgid "Maldives"
+msgstr "Maldivas"
+
+#: .././wpucountrylist.php:655
+msgid "Malawi"
+msgstr "Malaui"
+
+#: .././wpucountrylist.php:659
+msgid "Mexico"
+msgstr "México"
+
+#: .././wpucountrylist.php:663
+msgid "Malaysia"
+msgstr "Malasia"
+
+#: .././wpucountrylist.php:667
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: .././wpucountrylist.php:671
+msgid "Namibia"
+msgstr "Namibia"
+
+#: .././wpucountrylist.php:675
+msgid "New Caledonia"
+msgstr "Nueva Caledonia"
+
+#: .././wpucountrylist.php:679
+msgid "Niger"
+msgstr "Níger"
+
+#: .././wpucountrylist.php:683
+msgid "Norfolk Island"
+msgstr "Isla Norfolk"
+
+#: .././wpucountrylist.php:687
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: .././wpucountrylist.php:691
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: .././wpucountrylist.php:695
+msgid "The Netherlands"
+msgstr "Países Bajos"
+
+#: .././wpucountrylist.php:699
+msgid "Norway"
+msgstr "Noruega"
+
+#: .././wpucountrylist.php:703
+msgid "Nepal"
+msgstr "Nepal"
+
+#: .././wpucountrylist.php:707
+msgid "Nauru"
+msgstr "Nauru"
+
+#: .././wpucountrylist.php:711
+msgid "Niue"
+msgstr "Isla Niue"
+
+#: .././wpucountrylist.php:715
+msgid "New Zealand"
+msgstr "Nueva Zelanda"
+
+#: .././wpucountrylist.php:719
+msgid "Oman"
+msgstr "Omán"
+
+#: .././wpucountrylist.php:723
+msgid "Panama"
+msgstr "Panamá"
+
+#: .././wpucountrylist.php:727
+msgid "Peru"
+msgstr "Perú"
+
+#: .././wpucountrylist.php:731
+msgid "French Polynesia"
+msgstr "Polinesia Francesa"
+
+#: .././wpucountrylist.php:735
+msgid "Papua New Guinea"
+msgstr "Papúa Nueva Guinea"
+
+#: .././wpucountrylist.php:739
+msgid "Philippines"
+msgstr "Filipinas"
+
+#: .././wpucountrylist.php:743
+msgid "Pakistan"
+msgstr "Pakistán"
+
+#: .././wpucountrylist.php:747
+msgid "Poland"
+msgstr "Polonia"
+
+#: .././wpucountrylist.php:751
+msgid "St. Pierre and Miquelon"
+msgstr "San Pedro y Miquelón"
+
+#: .././wpucountrylist.php:755
+msgid "Pitcairn"
+msgstr "Islas Pitcairn"
+
+#: .././wpucountrylist.php:759
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: .././wpucountrylist.php:763
+msgid "State of Palestine"
+msgstr "Territorios Palestinos"
+
+#: .././wpucountrylist.php:767
+msgid "Portugal"
+msgstr "Portugal"
+
+#: .././wpucountrylist.php:771
+msgid "Palau"
+msgstr "Palau"
+
+#: .././wpucountrylist.php:775
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: .././wpucountrylist.php:779
+msgid "Qatar"
+msgstr "Catar"
+
+#: .././wpucountrylist.php:783
+msgid "Réunion"
+msgstr "Reunión"
+
+#: .././wpucountrylist.php:787
+msgid "Romania"
+msgstr "Rumanía"
+
+#: .././wpucountrylist.php:791
+msgid "Serbia"
+msgstr "Serbia"
+
+#: .././wpucountrylist.php:795
+msgid "Russian Federation"
+msgstr "Rusia"
+
+#: .././wpucountrylist.php:799
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: .././wpucountrylist.php:803
+msgid "Saudi Arabia"
+msgstr "Arabia Saudí"
+
+#: .././wpucountrylist.php:807
+msgid "Solomon Islands"
+msgstr "Islas Salomón"
+
+#: .././wpucountrylist.php:811
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: .././wpucountrylist.php:815
+msgid "Sudan"
+msgstr "Sudán"
+
+#: .././wpucountrylist.php:819
+msgid "Sweden"
+msgstr "Suecia"
+
+#: .././wpucountrylist.php:823
+msgid "Singapore"
+msgstr "Singapur"
+
+#: .././wpucountrylist.php:827
+msgid "Saint Helena"
+msgstr "Santa Elena"
+
+#: .././wpucountrylist.php:831
+msgid "Slovenia"
+msgstr "Eslovenia"
+
+#: .././wpucountrylist.php:835
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "Svalbard y Jan Mayen"
+
+#: .././wpucountrylist.php:839
+msgid "Slovakia"
+msgstr "Eslovaquia"
+
+#: .././wpucountrylist.php:843
+msgid "Sierra Leone"
+msgstr "Sierra Leona"
+
+#: .././wpucountrylist.php:847
+msgid "San Marino"
+msgstr "San Marino"
+
+#: .././wpucountrylist.php:851
+msgid "Senegal"
+msgstr "Senegal"
+
+#: .././wpucountrylist.php:855
+msgid "Somalia"
+msgstr "Somalia"
+
+#: .././wpucountrylist.php:859
+msgid "Suriname"
+msgstr "Surinam"
+
+#: .././wpucountrylist.php:863
+msgid "South Sudan"
+msgstr "Sudán del Sur"
+
+#: .././wpucountrylist.php:867
+msgid "Sao Tome and Principe"
+msgstr "Santo Tomé y Príncipe"
+
+#: .././wpucountrylist.php:871
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: .././wpucountrylist.php:875
+msgid "Sint Maarten (Dutch part)"
+msgstr "Sint Maarten"
+
+#: .././wpucountrylist.php:879
+msgid "Syria"
+msgstr "Siria"
+
+#: .././wpucountrylist.php:883
+msgid "Swaziland"
+msgstr "Suazilandia"
+
+#: .././wpucountrylist.php:887
+msgid "Turks and Caicos Islands"
+msgstr "Islas Turcas y Caicos"
+
+#: .././wpucountrylist.php:891
+msgid "Chad"
+msgstr "Chad"
+
+#: .././wpucountrylist.php:895
+msgid "French Southern Territories"
+msgstr "Territorios Australes Franceses"
+
+#: .././wpucountrylist.php:899
+msgid "Togo"
+msgstr "Togo"
+
+#: .././wpucountrylist.php:903
+msgid "Thailand"
+msgstr "Tailandia"
+
+#: .././wpucountrylist.php:907
+msgid "Tajikistan"
+msgstr "Tayikistán"
+
+#: .././wpucountrylist.php:911
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: .././wpucountrylist.php:915
+msgid "Timor-Leste"
+msgstr "Timor Oriental"
+
+#: .././wpucountrylist.php:919
+msgid "Turkmenistan"
+msgstr "Turkmenistán"
+
+#: .././wpucountrylist.php:923
+msgid "Tunisia"
+msgstr "Túnez"
+
+#: .././wpucountrylist.php:927
+msgid "Tonga"
+msgstr "Tonga"
+
+#: .././wpucountrylist.php:931
+msgid "Turkey"
+msgstr "Turquía"
+
+#: .././wpucountrylist.php:935
+msgid "Trinidad and Tobago"
+msgstr "Trinidad y Tobago"
+
+#: .././wpucountrylist.php:939
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: .././wpucountrylist.php:943
+msgid "Taiwan"
+msgstr "Taiwán"
+
+#: .././wpucountrylist.php:947
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: .././wpucountrylist.php:951
+msgid "Ukraine"
+msgstr "Ucrania"
+
+#: .././wpucountrylist.php:955
+msgid "Uganda"
+msgstr "Uganda"
+
+#: .././wpucountrylist.php:959
+msgid "United States Minor Outlying Islands"
+msgstr "Islas menores alejadas de EE. UU."
+
+#: .././wpucountrylist.php:963
+msgid "United States"
+msgstr "Estados Unidos"
+
+#: .././wpucountrylist.php:967
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: .././wpucountrylist.php:971
+msgid "Uzbekistan"
+msgstr "Uzbekistán"
+
+#: .././wpucountrylist.php:975
+msgid "Vatican"
+msgstr "Ciudad del Vaticano"
+
+#: .././wpucountrylist.php:979
+msgid "Saint Vincent and the Grenadines"
+msgstr "San Vicente y las Granadinas"
+
+#: .././wpucountrylist.php:983
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: .././wpucountrylist.php:987
+msgid "Virgin Islands (British)"
+msgstr "Islas Vírgenes Británicas"
+
+#: .././wpucountrylist.php:991
+msgid "Virgin Islands (U.S.)"
+msgstr "Islas Vírgenes de EE. UU."
+
+#: .././wpucountrylist.php:995
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: .././wpucountrylist.php:999
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: .././wpucountrylist.php:1003
+msgid "Wallis and Futuna Islands"
+msgstr "Wallis y Futuna"
+
+#: .././wpucountrylist.php:1007
+msgid "Samoa"
+msgstr "Samoa"
+
+#: .././wpucountrylist.php:1011
+msgid "Yemen"
+msgstr "Yemen"
+
+#: .././wpucountrylist.php:1015
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: .././wpucountrylist.php:1019
+msgid "South Africa"
+msgstr "Sudáfrica"
+
+#: .././wpucountrylist.php:1023
+msgid "Zambia"
+msgstr "Zambia"
+
+#: .././wpucountrylist.php:1027
+msgid "Zimbabwe"
+msgstr "Zimbabue"
