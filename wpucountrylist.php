@@ -3,7 +3,7 @@
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.2
+Version: 0.2.1
 Author: Darklg
 Author URI: http://darklg.me/
 License: MIT License
@@ -31,7 +31,7 @@ class WPUCountryList {
     function load_list() {
         $this->list = array(
             'AD' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Andorra', 'wpucountrylist') ,
             ) ,
             'AE' => array(
@@ -51,7 +51,7 @@ class WPUCountryList {
                 'country' => __('Anguilla', 'wpucountrylist') ,
             ) ,
             'AL' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Albania', 'wpucountrylist') ,
             ) ,
             'AM' => array(
@@ -75,7 +75,7 @@ class WPUCountryList {
                 'country' => __('American Samoa', 'wpucountrylist') ,
             ) ,
             'AT' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Austria', 'wpucountrylist') ,
             ) ,
             'AU' => array(
@@ -87,7 +87,7 @@ class WPUCountryList {
                 'country' => __('Aruba', 'wpucountrylist') ,
             ) ,
             'AX' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Åland Islands', 'wpucountrylist') ,
             ) ,
             'AZ' => array(
@@ -95,7 +95,7 @@ class WPUCountryList {
                 'country' => __('Azerbaijan', 'wpucountrylist') ,
             ) ,
             'BA' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Bosnia and Herzegovina', 'wpucountrylist') ,
             ) ,
             'BB' => array(
@@ -107,7 +107,7 @@ class WPUCountryList {
                 'country' => __('Bangladesh', 'wpucountrylist') ,
             ) ,
             'BE' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Belgium', 'wpucountrylist') ,
             ) ,
             'BF' => array(
@@ -115,7 +115,7 @@ class WPUCountryList {
                 'country' => __('Burkina Faso', 'wpucountrylist') ,
             ) ,
             'BG' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Bulgaria', 'wpucountrylist') ,
             ) ,
             'BH' => array(
@@ -171,7 +171,7 @@ class WPUCountryList {
                 'country' => __('Botswana', 'wpucountrylist') ,
             ) ,
             'BY' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Belarus', 'wpucountrylist') ,
             ) ,
             'BZ' => array(
@@ -199,7 +199,7 @@ class WPUCountryList {
                 'country' => __('Congo', 'wpucountrylist') ,
             ) ,
             'CH' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Switzerland', 'wpucountrylist') ,
             ) ,
             'CI' => array(
@@ -247,15 +247,15 @@ class WPUCountryList {
                 'country' => __('Christmas Island', 'wpucountrylist') ,
             ) ,
             'CY' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Cyprus', 'wpucountrylist') ,
             ) ,
             'CZ' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Czech Republic', 'wpucountrylist') ,
             ) ,
             'DE' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Germany', 'wpucountrylist') ,
             ) ,
             'DJ' => array(
@@ -263,7 +263,7 @@ class WPUCountryList {
                 'country' => __('Djibouti', 'wpucountrylist') ,
             ) ,
             'DK' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Denmark', 'wpucountrylist') ,
             ) ,
             'DM' => array(
@@ -283,7 +283,7 @@ class WPUCountryList {
                 'country' => __('Ecuador', 'wpucountrylist') ,
             ) ,
             'EE' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Estonia', 'wpucountrylist') ,
             ) ,
             'EG' => array(
@@ -299,7 +299,7 @@ class WPUCountryList {
                 'country' => __('Eritrea', 'wpucountrylist') ,
             ) ,
             'ES' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Spain', 'wpucountrylist') ,
             ) ,
             'ET' => array(
@@ -307,7 +307,7 @@ class WPUCountryList {
                 'country' => __('Ethiopia', 'wpucountrylist') ,
             ) ,
             'FI' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Finland', 'wpucountrylist') ,
             ) ,
             'FJ' => array(
@@ -323,11 +323,11 @@ class WPUCountryList {
                 'country' => __('Federated States of Micronesia', 'wpucountrylist') ,
             ) ,
             'FO' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Faroe Islands', 'wpucountrylist') ,
             ) ,
             'FR' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('France', 'wpucountrylist') ,
             ) ,
             'GA' => array(
@@ -335,7 +335,7 @@ class WPUCountryList {
                 'country' => __('Gabon', 'wpucountrylist') ,
             ) ,
             'GB' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('United Kingdom', 'wpucountrylist') ,
             ) ,
             'GD' => array(
@@ -351,7 +351,7 @@ class WPUCountryList {
                 'country' => __('French Guiana', 'wpucountrylist') ,
             ) ,
             'GG' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Guernsey', 'wpucountrylist') ,
             ) ,
             'GH' => array(
@@ -359,7 +359,7 @@ class WPUCountryList {
                 'country' => __('Ghana', 'wpucountrylist') ,
             ) ,
             'GI' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Gibraltar', 'wpucountrylist') ,
             ) ,
             'GL' => array(
@@ -383,7 +383,7 @@ class WPUCountryList {
                 'country' => __('Equatorial Guinea', 'wpucountrylist') ,
             ) ,
             'GR' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Greece', 'wpucountrylist') ,
             ) ,
             'GS' => array(
@@ -419,7 +419,7 @@ class WPUCountryList {
                 'country' => __('Honduras', 'wpucountrylist') ,
             ) ,
             'HR' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Croatia', 'wpucountrylist') ,
             ) ,
             'HT' => array(
@@ -427,7 +427,7 @@ class WPUCountryList {
                 'country' => __('Haiti', 'wpucountrylist') ,
             ) ,
             'HU' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Hungary', 'wpucountrylist') ,
             ) ,
             'ID' => array(
@@ -435,7 +435,7 @@ class WPUCountryList {
                 'country' => __('Indonesia', 'wpucountrylist') ,
             ) ,
             'IE' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Ireland', 'wpucountrylist') ,
             ) ,
             'IL' => array(
@@ -443,7 +443,7 @@ class WPUCountryList {
                 'country' => __('Israel', 'wpucountrylist') ,
             ) ,
             'IM' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Isle of Man', 'wpucountrylist') ,
             ) ,
             'IN' => array(
@@ -463,15 +463,15 @@ class WPUCountryList {
                 'country' => __('Iran', 'wpucountrylist') ,
             ) ,
             'IS' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Iceland', 'wpucountrylist') ,
             ) ,
             'IT' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Italy', 'wpucountrylist') ,
             ) ,
             'JE' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Jersey', 'wpucountrylist') ,
             ) ,
             'JM' => array(
@@ -543,7 +543,7 @@ class WPUCountryList {
                 'country' => __('Saint Lucia', 'wpucountrylist') ,
             ) ,
             'LI' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Liechtenstein', 'wpucountrylist') ,
             ) ,
             'LK' => array(
@@ -559,15 +559,15 @@ class WPUCountryList {
                 'country' => __('Lesotho', 'wpucountrylist') ,
             ) ,
             'LT' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Lithuania', 'wpucountrylist') ,
             ) ,
             'LU' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Luxembourg', 'wpucountrylist') ,
             ) ,
             'LV' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Latvia', 'wpucountrylist') ,
             ) ,
             'LY' => array(
@@ -579,15 +579,15 @@ class WPUCountryList {
                 'country' => __('Morocco', 'wpucountrylist') ,
             ) ,
             'MC' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Monaco', 'wpucountrylist') ,
             ) ,
             'MD' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Moldova', 'wpucountrylist') ,
             ) ,
             'ME' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Montenegro', 'wpucountrylist') ,
             ) ,
             'MF' => array(
@@ -603,7 +603,7 @@ class WPUCountryList {
                 'country' => __('Marshall Islands', 'wpucountrylist') ,
             ) ,
             'MK' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Macedonia', 'wpucountrylist') ,
             ) ,
             'ML' => array(
@@ -639,7 +639,7 @@ class WPUCountryList {
                 'country' => __('Montserrat', 'wpucountrylist') ,
             ) ,
             'MT' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Malta', 'wpucountrylist') ,
             ) ,
             'MU' => array(
@@ -691,11 +691,11 @@ class WPUCountryList {
                 'country' => __('Nicaragua', 'wpucountrylist') ,
             ) ,
             'NL' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('The Netherlands', 'wpucountrylist') ,
             ) ,
             'NO' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Norway', 'wpucountrylist') ,
             ) ,
             'NP' => array(
@@ -743,7 +743,7 @@ class WPUCountryList {
                 'country' => __('Pakistan', 'wpucountrylist') ,
             ) ,
             'PL' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Poland', 'wpucountrylist') ,
             ) ,
             'PM' => array(
@@ -763,7 +763,7 @@ class WPUCountryList {
                 'country' => __('State of Palestine', 'wpucountrylist') ,
             ) ,
             'PT' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Portugal', 'wpucountrylist') ,
             ) ,
             'PW' => array(
@@ -783,15 +783,15 @@ class WPUCountryList {
                 'country' => __('Réunion', 'wpucountrylist') ,
             ) ,
             'RO' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Romania', 'wpucountrylist') ,
             ) ,
             'RS' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Serbia', 'wpucountrylist') ,
             ) ,
             'RU' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Russian Federation', 'wpucountrylist') ,
             ) ,
             'RW' => array(
@@ -815,7 +815,7 @@ class WPUCountryList {
                 'country' => __('Sudan', 'wpucountrylist') ,
             ) ,
             'SE' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Sweden', 'wpucountrylist') ,
             ) ,
             'SG' => array(
@@ -827,15 +827,15 @@ class WPUCountryList {
                 'country' => __('Saint Helena', 'wpucountrylist') ,
             ) ,
             'SI' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Slovenia', 'wpucountrylist') ,
             ) ,
             'SJ' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Svalbard and Jan Mayen Islands', 'wpucountrylist') ,
             ) ,
             'SK' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Slovakia', 'wpucountrylist') ,
             ) ,
             'SL' => array(
@@ -843,7 +843,7 @@ class WPUCountryList {
                 'country' => __('Sierra Leone', 'wpucountrylist') ,
             ) ,
             'SM' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('San Marino', 'wpucountrylist') ,
             ) ,
             'SN' => array(
@@ -947,7 +947,7 @@ class WPUCountryList {
                 'country' => __('Tanzania', 'wpucountrylist') ,
             ) ,
             'UA' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Ukraine', 'wpucountrylist') ,
             ) ,
             'UG' => array(
@@ -971,7 +971,7 @@ class WPUCountryList {
                 'country' => __('Uzbekistan', 'wpucountrylist') ,
             ) ,
             'VA' => array(
-                'continent' => 'europa',
+                'continent' => 'europe',
                 'country' => __('Vatican', 'wpucountrylist') ,
             ) ,
             'VC' => array(
