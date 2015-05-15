@@ -3,7 +3,7 @@
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.3
+Version: 0.3.1
 Author: Darklg
 Author URI: http://darklg.me/
 License: MIT License
@@ -400,9 +400,9 @@ class WPUCountryList {
             'CW' => array(
                 'continent' => 'america',
                 'country' => __('Curaçao', 'wpucountrylist') ,
-                'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'zoom' => 9,
+                'lat' => '12.1542459',
+                'lng' => '-68.9464319',
             ) ,
             'CX' => array(
                 'continent' => 'oceania',
@@ -569,7 +569,7 @@ class WPUCountryList {
                 'continent' => 'europe',
                 'country' => __('United Kingdom', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => '55.378051',
+                'lat' => '54.578051',
                 'lng' => '-3.435973',
             ) ,
             'GD' => array(
@@ -716,8 +716,8 @@ class WPUCountryList {
                 'continent' => 'europe',
                 'country' => __('Croatia', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => '45.1',
-                'lng' => '15/02/2015',
+                'lat' => '45.8069064',
+                'lng' => '15.9712681',
             ) ,
             'HT' => array(
                 'continent' => 'america',
@@ -1017,8 +1017,8 @@ class WPUCountryList {
                 'continent' => 'america',
                 'country' => __('Saint-Martin (France)', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'lat' => '18.0702959',
+                'lng' => '-63.0819655',
             ) ,
             'MG' => array(
                 'continent' => 'africa',
@@ -1660,7 +1660,7 @@ class WPUCountryList {
             'US' => array(
                 'continent' => 'america',
                 'country' => __('United States', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 4,
                 'lat' => '37.09024',
                 'lng' => '-95.712891',
             ) ,
@@ -1759,6 +1759,8 @@ class WPUCountryList {
                 'continent' => 'africa',
                 'country' => __('South Africa', 'wpucountrylist') ,
                 'zoom' => 6,
+                'lat' => '-33.9484645',
+                'lng' => '18.581955',
             ) ,
             'ZW' => array(
                 'continent' => 'africa',
