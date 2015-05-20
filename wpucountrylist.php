@@ -3,7 +3,7 @@
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.3.1
+Version: 0.3.2
 Author: Darklg
 Author URI: http://darklg.me/
 License: MIT License
@@ -135,8 +135,8 @@ class WPUCountryList {
                 'continent' => 'europe',
                 'country' => __('Åland Islands', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'lat' => '60.1462035',
+                'lng' => '19.8263793',
             ) ,
             'AZ' => array(
                 'continent' => 'asia',
@@ -212,8 +212,8 @@ class WPUCountryList {
                 'continent' => 'america',
                 'country' => __('Saint Barthélemy', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'lat' => '17.8927276',
+                'lng' => '-62.8334239',
             ) ,
             'BM' => array(
                 'continent' => 'america',
@@ -240,8 +240,8 @@ class WPUCountryList {
                 'continent' => 'america',
                 'country' => __('Caribbean Netherlands', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'lat' => '12.1683718',
+                'lng' => '-68.308183',
             ) ,
             'BR' => array(
                 'continent' => 'america',
@@ -1394,7 +1394,7 @@ class WPUCountryList {
             'SC' => array(
                 'continent' => 'africa',
                 'country' => __('Seychelles', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 10,
                 'lat' => '-4.679574',
                 'lng' => '55.491977',
             ) ,
@@ -1429,7 +1429,7 @@ class WPUCountryList {
             'SI' => array(
                 'continent' => 'europe',
                 'country' => __('Slovenia', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 8,
                 'lat' => '46.151241',
                 'lng' => '14.995463',
             ) ,
@@ -1486,8 +1486,8 @@ class WPUCountryList {
                 'continent' => 'africa',
                 'country' => __('South Sudan', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'lat' => '7.8626845',
+                'lng' => '29.694923',
             ) ,
             'ST' => array(
                 'continent' => 'africa',
@@ -1507,8 +1507,8 @@ class WPUCountryList {
                 'continent' => 'america',
                 'country' => __('Sint Maarten (Dutch part)', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => 0,
-                'lng' => 0,
+                'lat' => '18.0317197',
+                'lng' => '-63.0646891',
             ) ,
             'SY' => array(
                 'continent' => 'asia',
@@ -1759,8 +1759,8 @@ class WPUCountryList {
                 'continent' => 'africa',
                 'country' => __('South Africa', 'wpucountrylist') ,
                 'zoom' => 6,
-                'lat' => '-33.9484645',
-                'lng' => '18.581955',
+                'lat' => '-28.7366978',
+                'lng' => '24.756795',
             ) ,
             'ZW' => array(
                 'continent' => 'africa',
