@@ -3,7 +3,7 @@
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.3.2
+Version: 0.3.3
 Author: Darklg
 Author URI: http://darklg.me/
 License: MIT License
@@ -526,7 +526,7 @@ class WPUCountryList {
             'FJ' => array(
                 'continent' => 'oceania',
                 'country' => __('Fiji', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 9,
                 'lat' => '-16.578193',
                 'lng' => '179.414413',
             ) ,
@@ -638,7 +638,7 @@ class WPUCountryList {
             'GP' => array(
                 'continent' => 'america',
                 'country' => __('Guadeloupe', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 10,
                 'lat' => '16.995971',
                 'lng' => '-62.067641',
             ) ,
@@ -673,7 +673,7 @@ class WPUCountryList {
             'GU' => array(
                 'continent' => 'oceania',
                 'country' => __('Guam', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 10,
                 'lat' => '13.444304',
                 'lng' => '144.793731',
             ) ,
@@ -995,9 +995,9 @@ class WPUCountryList {
             'MC' => array(
                 'continent' => 'europe',
                 'country' => __('Monaco', 'wpucountrylist') ,
-                'zoom' => 6,
-                'lat' => '43.750298',
-                'lng' => '7.412841',
+                'zoom' => 14,
+                'lat' => '43.7379457',
+                'lng' => '7.4290784',
             ) ,
             'MD' => array(
                 'continent' => 'europe',
@@ -1079,7 +1079,7 @@ class WPUCountryList {
             'MQ' => array(
                 'continent' => 'america',
                 'country' => __('Martinique', 'wpucountrylist') ,
-                'zoom' => 6,
+                'zoom' => 10,
                 'lat' => '14.641528',
                 'lng' => '-61.024174',
             ) ,
