@@ -4,7 +4,7 @@ defined('ABSPATH') || die;
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.4.0
+Version: 0.5.0
 Author: Darklg
 Author URI: https://darklg.me/
 Text Domain: wpucountrylist
@@ -1783,11 +1783,7 @@ class WPUCountryList {
         );
     }
 
-    public function get_sorted_raw_list() {
-        if (empty($this->list)) {
-            $this->load_list();
-        }
-        $list = $this->list;
+    public function get_sorted_raw_list($list) {
         uasort($list, array(&$this,
             'sort_countries'
         ));
@@ -1827,13 +1823,13 @@ class WPUCountryList {
         }
         $list = $this->list;
         if ($args['sorted']) {
-            $list = $this->get_sorted_raw_list();
+            $list = $this->get_sorted_raw_list($list);
         }
         if ($args['lowercase']) {
             $list = $this->convert_list_to_lower_case($list);
         }
         if (isset($args['move_first'])) {
-            $list = $this->move_some_countries_first($list, $args['move_first']);
+            $list = $this->move_some_items_first($list, $args['move_first']);
         }
         $list = apply_filters('wpucountrylist_list', $list);
         $current_country = explode('_', get_locale());
@@ -1853,7 +1849,7 @@ class WPUCountryList {
         return array_change_key_case($list, CASE_LOWER);
     }
 
-    public function move_some_countries_first($list, $countries_codes = array()) {
+    public function move_some_items_first($list, $countries_codes = array()) {
         $first_keys = array_reverse($countries_codes);
         foreach ($first_keys as $key) {
             if (!isset($list[$key])) {
@@ -1861,6 +1857,249 @@ class WPUCountryList {
             }
             $list = array($key => $list[$key]) + $list;
         }
+        return $list;
+    }
+
+    /**
+     * Get a list of country codes and names
+     * Thanks to https://gist.github.com/grexlort/00cd35c9e6f6e5d2c6f2
+     * Thanks to https: //gist.github.com/andyj/7108917
+     * @return array
+     */
+    public function get_phone_prefixes($args = array()) {
+        $list = [
+            '44' => __('UK', 'wpucountrylist') . ' (+44)',
+            '1' => __('USA', 'wpucountrylist') . ' (+1)',
+            '213' => __('Algeria', 'wpucountrylist') . ' (+213)',
+            '376' => __('Andorra', 'wpucountrylist') . ' (+376)',
+            '244' => __('Angola', 'wpucountrylist') . ' (+244)',
+            '1264' => __('Anguilla', 'wpucountrylist') . ' (+1264)',
+            '1268' => __('Antigua & Barbuda', 'wpucountrylist') . ' (+1268)',
+            '54' => __('Argentina', 'wpucountrylist') . ' (+54)',
+            '374' => __('Armenia', 'wpucountrylist') . ' (+374)',
+            '297' => __('Aruba', 'wpucountrylist') . ' (+297)',
+            '61' => __('Australia', 'wpucountrylist') . ' (+61)',
+            '43' => __('Austria', 'wpucountrylist') . ' (+43)',
+            '994' => __('Azerbaijan', 'wpucountrylist') . ' (+994)',
+            '1242' => __('Bahamas', 'wpucountrylist') . ' (+1242)',
+            '973' => __('Bahrain', 'wpucountrylist') . ' (+973)',
+            '880' => __('Bangladesh', 'wpucountrylist') . ' (+880)',
+            '1246' => __('Barbados', 'wpucountrylist') . ' (+1246)',
+            '375' => __('Belarus', 'wpucountrylist') . ' (+375)',
+            '32' => __('Belgium', 'wpucountrylist') . ' (+32)',
+            '501' => __('Belize', 'wpucountrylist') . ' (+501)',
+            '229' => __('Benin', 'wpucountrylist') . ' (+229)',
+            '1441' => __('Bermuda', 'wpucountrylist') . ' (+1441)',
+            '975' => __('Bhutan', 'wpucountrylist') . ' (+975)',
+            '591' => __('Bolivia', 'wpucountrylist') . ' (+591)',
+            '387' => __('Bosnia Herzegovina', 'wpucountrylist') . ' (+387)',
+            '267' => __('Botswana', 'wpucountrylist') . ' (+267)',
+            '55' => __('Brazil', 'wpucountrylist') . ' (+55)',
+            '673' => __('Brunei', 'wpucountrylist') . ' (+673)',
+            '359' => __('Bulgaria', 'wpucountrylist') . ' (+359)',
+            '226' => __('Burkina Faso', 'wpucountrylist') . ' (+226)',
+            '257' => __('Burundi', 'wpucountrylist') . ' (+257)',
+            '855' => __('Cambodia', 'wpucountrylist') . ' (+855)',
+            '237' => __('Cameroon', 'wpucountrylist') . ' (+237)',
+            '1' => __('Canada', 'wpucountrylist') . ' (+1)',
+            '238' => __('Cape Verde Islands', 'wpucountrylist') . ' (+238)',
+            '1345' => __('Cayman Islands', 'wpucountrylist') . ' (+1345)',
+            '236' => __('Central African Republic', 'wpucountrylist') . ' (+236)',
+            '56' => __('Chile', 'wpucountrylist') . ' (+56)',
+            '86' => __('China', 'wpucountrylist') . ' (+86)',
+            '57' => __('Colombia', 'wpucountrylist') . ' (+57)',
+            '269' => __('Comoros', 'wpucountrylist') . ' (+269)',
+            '242' => __('Congo', 'wpucountrylist') . ' (+242)',
+            '682' => __('Cook Islands', 'wpucountrylist') . ' (+682)',
+            '506' => __('Costa Rica', 'wpucountrylist') . ' (+506)',
+            '385' => __('Croatia', 'wpucountrylist') . ' (+385)',
+            '53' => __('Cuba', 'wpucountrylist') . ' (+53)',
+            '90392' => __('Cyprus North', 'wpucountrylist') . ' (+90392)',
+            '357' => __('Cyprus South', 'wpucountrylist') . ' (+357)',
+            '42' => __('Czech Republic', 'wpucountrylist') . ' (+42)',
+            '45' => __('Denmark', 'wpucountrylist') . ' (+45)',
+            '253' => __('Djibouti', 'wpucountrylist') . ' (+253)',
+            '1809' => __('Dominica', 'wpucountrylist') . ' (+1809)',
+            '1809' => __('Dominican Republic', 'wpucountrylist') . ' (+1809)',
+            '593' => __('Ecuador', 'wpucountrylist') . ' (+593)',
+            '20' => __('Egypt', 'wpucountrylist') . ' (+20)',
+            '503' => __('El Salvador', 'wpucountrylist') . ' (+503)',
+            '240' => __('Equatorial Guinea', 'wpucountrylist') . ' (+240)',
+            '291' => __('Eritrea', 'wpucountrylist') . ' (+291)',
+            '372' => __('Estonia', 'wpucountrylist') . ' (+372)',
+            '251' => __('Ethiopia', 'wpucountrylist') . ' (+251)',
+            '500' => __('Falkland Islands', 'wpucountrylist') . ' (+500)',
+            '298' => __('Faroe Islands', 'wpucountrylist') . ' (+298)',
+            '679' => __('Fiji', 'wpucountrylist') . ' (+679)',
+            '358' => __('Finland', 'wpucountrylist') . ' (+358)',
+            '33' => __('France', 'wpucountrylist') . ' (+33)',
+            '594' => __('French Guiana', 'wpucountrylist') . ' (+594)',
+            '689' => __('French Polynesia', 'wpucountrylist') . ' (+689)',
+            '241' => __('Gabon', 'wpucountrylist') . ' (+241)',
+            '220' => __('Gambia', 'wpucountrylist') . ' (+220)',
+            '7880' => __('Georgia', 'wpucountrylist') . ' (+7880)',
+            '49' => __('Germany', 'wpucountrylist') . ' (+49)',
+            '233' => __('Ghana', 'wpucountrylist') . ' (+233)',
+            '350' => __('Gibraltar', 'wpucountrylist') . ' (+350)',
+            '30' => __('Greece', 'wpucountrylist') . ' (+30)',
+            '299' => __('Greenland', 'wpucountrylist') . ' (+299)',
+            '1473' => __('Grenada', 'wpucountrylist') . ' (+1473)',
+            '590' => __('Guadeloupe', 'wpucountrylist') . ' (+590)',
+            '671' => __('Guam', 'wpucountrylist') . ' (+671)',
+            '502' => __('Guatemala', 'wpucountrylist') . ' (+502)',
+            '224' => __('Guinea', 'wpucountrylist') . ' (+224)',
+            '245' => __('Guinea - Bissau', 'wpucountrylist') . ' (+245)',
+            '592' => __('Guyana', 'wpucountrylist') . ' (+592)',
+            '509' => __('Haiti', 'wpucountrylist') . ' (+509)',
+            '504' => __('Honduras', 'wpucountrylist') . ' (+504)',
+            '852' => __('Hong Kong', 'wpucountrylist') . ' (+852)',
+            '36' => __('Hungary', 'wpucountrylist') . ' (+36)',
+            '354' => __('Iceland', 'wpucountrylist') . ' (+354)',
+            '91' => __('India', 'wpucountrylist') . ' (+91)',
+            '62' => __('Indonesia', 'wpucountrylist') . ' (+62)',
+            '98' => __('Iran', 'wpucountrylist') . ' (+98)',
+            '964' => __('Iraq', 'wpucountrylist') . ' (+964)',
+            '353' => __('Ireland', 'wpucountrylist') . ' (+353)',
+            '972' => __('Israel', 'wpucountrylist') . ' (+972)',
+            '39' => __('Italy', 'wpucountrylist') . ' (+39)',
+            '1876' => __('Jamaica', 'wpucountrylist') . ' (+1876)',
+            '81' => __('Japan', 'wpucountrylist') . ' (+81)',
+            '962' => __('Jordan', 'wpucountrylist') . ' (+962)',
+            '7' => __('Kazakhstan', 'wpucountrylist') . ' (+7)',
+            '254' => __('Kenya', 'wpucountrylist') . ' (+254)',
+            '686' => __('Kiribati', 'wpucountrylist') . ' (+686)',
+            '850' => __('Korea North', 'wpucountrylist') . ' (+850)',
+            '82' => __('Korea South', 'wpucountrylist') . ' (+82)',
+            '965' => __('Kuwait', 'wpucountrylist') . ' (+965)',
+            '996' => __('Kyrgyzstan', 'wpucountrylist') . ' (+996)',
+            '856' => __('Laos', 'wpucountrylist') . ' (+856)',
+            '371' => __('Latvia', 'wpucountrylist') . ' (+371)',
+            '961' => __('Lebanon', 'wpucountrylist') . ' (+961)',
+            '266' => __('Lesotho', 'wpucountrylist') . ' (+266)',
+            '231' => __('Liberia', 'wpucountrylist') . ' (+231)',
+            '218' => __('Libya', 'wpucountrylist') . ' (+218)',
+            '417' => __('Liechtenstein', 'wpucountrylist') . ' (+417)',
+            '370' => __('Lithuania', 'wpucountrylist') . ' (+370)',
+            '352' => __('Luxembourg', 'wpucountrylist') . ' (+352)',
+            '853' => __('Macao', 'wpucountrylist') . ' (+853)',
+            '389' => __('Macedonia', 'wpucountrylist') . ' (+389)',
+            '261' => __('Madagascar', 'wpucountrylist') . ' (+261)',
+            '265' => __('Malawi', 'wpucountrylist') . ' (+265)',
+            '60' => __('Malaysia', 'wpucountrylist') . ' (+60)',
+            '960' => __('Maldives', 'wpucountrylist') . ' (+960)',
+            '223' => __('Mali', 'wpucountrylist') . ' (+223)',
+            '356' => __('Malta', 'wpucountrylist') . ' (+356)',
+            '692' => __('Marshall Islands', 'wpucountrylist') . ' (+692)',
+            '596' => __('Martinique', 'wpucountrylist') . ' (+596)',
+            '222' => __('Mauritania', 'wpucountrylist') . ' (+222)',
+            '269' => __('Mayotte', 'wpucountrylist') . ' (+269)',
+            '52' => __('Mexico', 'wpucountrylist') . ' (+52)',
+            '691' => __('Micronesia', 'wpucountrylist') . ' (+691)',
+            '373' => __('Moldova', 'wpucountrylist') . ' (+373)',
+            '377' => __('Monaco', 'wpucountrylist') . ' (+377)',
+            '976' => __('Mongolia', 'wpucountrylist') . ' (+976)',
+            '1664' => __('Montserrat', 'wpucountrylist') . ' (+1664)',
+            '212' => __('Morocco', 'wpucountrylist') . ' (+212)',
+            '258' => __('Mozambique', 'wpucountrylist') . ' (+258)',
+            '95' => __('Myanmar', 'wpucountrylist') . ' (+95)',
+            '264' => __('Namibia', 'wpucountrylist') . ' (+264)',
+            '674' => __('Nauru', 'wpucountrylist') . ' (+674)',
+            '977' => __('Nepal', 'wpucountrylist') . ' (+977)',
+            '31' => __('Netherlands', 'wpucountrylist') . ' (+31)',
+            '687' => __('New Caledonia', 'wpucountrylist') . ' (+687)',
+            '64' => __('New Zealand', 'wpucountrylist') . ' (+64)',
+            '505' => __('Nicaragua', 'wpucountrylist') . ' (+505)',
+            '227' => __('Niger', 'wpucountrylist') . ' (+227)',
+            '234' => __('Nigeria', 'wpucountrylist') . ' (+234)',
+            '683' => __('Niue', 'wpucountrylist') . ' (+683)',
+            '672' => __('Norfolk Islands', 'wpucountrylist') . ' (+672)',
+            '670' => __('Northern Marianas', 'wpucountrylist') . ' (+670)',
+            '47' => __('Norway', 'wpucountrylist') . ' (+47)',
+            '968' => __('Oman', 'wpucountrylist') . ' (+968)',
+            '680' => __('Palau', 'wpucountrylist') . ' (+680)',
+            '507' => __('Panama', 'wpucountrylist') . ' (+507)',
+            '675' => __('Papua New Guinea', 'wpucountrylist') . ' (+675)',
+            '595' => __('Paraguay', 'wpucountrylist') . ' (+595)',
+            '51' => __('Peru', 'wpucountrylist') . ' (+51)',
+            '63' => __('Philippines', 'wpucountrylist') . ' (+63)',
+            '48' => __('Poland', 'wpucountrylist') . ' (+48)',
+            '351' => __('Portugal', 'wpucountrylist') . ' (+351)',
+            '1787' => __('Puerto Rico', 'wpucountrylist') . ' (+1787)',
+            '974' => __('Qatar', 'wpucountrylist') . ' (+974)',
+            '262' => __('Reunion', 'wpucountrylist') . ' (+262)',
+            '40' => __('Romania', 'wpucountrylist') . ' (+40)',
+            '7' => __('Russia', 'wpucountrylist') . ' (+7)',
+            '250' => __('Rwanda', 'wpucountrylist') . ' (+250)',
+            '378' => __('San Marino', 'wpucountrylist') . ' (+378)',
+            '239' => __('Sao Tome & Principe', 'wpucountrylist') . ' (+239)',
+            '966' => __('Saudi Arabia', 'wpucountrylist') . ' (+966)',
+            '221' => __('Senegal', 'wpucountrylist') . ' (+221)',
+            '381' => __('Serbia', 'wpucountrylist') . ' (+381)',
+            '248' => __('Seychelles', 'wpucountrylist') . ' (+248)',
+            '232' => __('Sierra Leone', 'wpucountrylist') . ' (+232)',
+            '65' => __('Singapore', 'wpucountrylist') . ' (+65)',
+            '421' => __('Slovak Republic', 'wpucountrylist') . ' (+421)',
+            '386' => __('Slovenia', 'wpucountrylist') . ' (+386)',
+            '677' => __('Solomon Islands', 'wpucountrylist') . ' (+677)',
+            '252' => __('Somalia', 'wpucountrylist') . ' (+252)',
+            '27' => __('South Africa', 'wpucountrylist') . ' (+27)',
+            '34' => __('Spain', 'wpucountrylist') . ' (+34)',
+            '94' => __('Sri Lanka', 'wpucountrylist') . ' (+94)',
+            '290' => __('St. Helena', 'wpucountrylist') . ' (+290)',
+            '1869' => __('St. Kitts', 'wpucountrylist') . ' (+1869)',
+            '1758' => __('St. Lucia', 'wpucountrylist') . ' (+1758)',
+            '249' => __('Sudan', 'wpucountrylist') . ' (+249)',
+            '597' => __('Suriname', 'wpucountrylist') . ' (+597)',
+            '268' => __('Swaziland', 'wpucountrylist') . ' (+268)',
+            '46' => __('Sweden', 'wpucountrylist') . ' (+46)',
+            '41' => __('Switzerland', 'wpucountrylist') . ' (+41)',
+            '963' => __('Syria', 'wpucountrylist') . ' (+963)',
+            '886' => __('Taiwan', 'wpucountrylist') . ' (+886)',
+            '7' => __('Tajikstan', 'wpucountrylist') . ' (+7)',
+            '66' => __('Thailand', 'wpucountrylist') . ' (+66)',
+            '228' => __('Togo', 'wpucountrylist') . ' (+228)',
+            '676' => __('Tonga', 'wpucountrylist') . ' (+676)',
+            '1868' => __('Trinidad & Tobago', 'wpucountrylist') . ' (+1868)',
+            '216' => __('Tunisia', 'wpucountrylist') . ' (+216)',
+            '90' => __('Turkey', 'wpucountrylist') . ' (+90)',
+            '7' => __('Turkmenistan', 'wpucountrylist') . ' (+7)',
+            '993' => __('Turkmenistan', 'wpucountrylist') . ' (+993)',
+            '1649' => __('Turks & Caicos Islands', 'wpucountrylist') . ' (+1649)',
+            '688' => __('Tuvalu', 'wpucountrylist') . ' (+688)',
+            '256' => __('Uganda', 'wpucountrylist') . ' (+256)',
+            '380' => __('Ukraine', 'wpucountrylist') . ' (+380)',
+            '971' => __('United Arab Emirates', 'wpucountrylist') . ' (+971)',
+            '598' => __('Uruguay', 'wpucountrylist') . ' (+598)',
+            '7' => __('Uzbekistan', 'wpucountrylist') . ' (+7)',
+            '678' => __('Vanuatu', 'wpucountrylist') . ' (+678)',
+            '379' => __('Vatican City', 'wpucountrylist') . ' (+379)',
+            '58' => __('Venezuela', 'wpucountrylist') . ' (+58)',
+            '84' => __('Vietnam', 'wpucountrylist') . ' (+84)',
+            '84' => __('Virgin Islands - British', 'wpucountrylist') . ' (+1284)',
+            '84' => __('Virgin Islands - US', 'wpucountrylist') . ' (+1340)',
+            '681' => __('Wallis & Futuna', 'wpucountrylist') . ' (+681)',
+            '969' => __('Yemen (North', 'wpucountrylist') . ' (+969)',
+            '967' => __('Yemen (South', 'wpucountrylist') . ' (+967)',
+            '260' => __('Zambia', 'wpucountrylist') . ' (+260)',
+            '263' => __('Zimbabwe', 'wpucountrylist') . ' (+263)'
+        ];
+
+        $defaults = array(
+            'sorted' => false
+        );
+        if (!is_array($args)) {
+            $args = array();
+        }
+        $args = array_merge($defaults, $args);
+
+        if ($args['sorted']) {
+            natsort($list);
+        }
+
+        if (isset($args['move_first'])) {
+            $list = $this->move_some_items_first($list, $args['move_first']);
+        }
+
         return $list;
     }
 }
