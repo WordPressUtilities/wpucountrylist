@@ -4,7 +4,7 @@ defined('ABSPATH') || die;
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.5.0
+Version: 0.5.1
 Author: Darklg
 Author URI: https://darklg.me/
 Text Domain: wpucountrylist
@@ -24,17 +24,19 @@ class WPUCountryList {
 
     public function __construct() {
         add_action('init', array(&$this,
-            'load_list'
-        ));
-        add_action('plugins_loaded', array(&$this,
             'load_plugin_textdomain'
+        ));
+        add_action('init', array(&$this,
+            'load_list'
         ));
     }
 
     public function load_plugin_textdomain() {
         $lang_dir = dirname(plugin_basename(__FILE__)) . '/lang/';
-        if (!load_plugin_textdomain('wpucountrylist', false, $lang_dir)) {
+        if (strpos(__DIR__, 'mu-plugins') !== false) {
             load_muplugin_textdomain('wpucountrylist', $lang_dir);
+        } else {
+            load_plugin_textdomain('wpucountrylist', false, $lang_dir);
         }
         $this->plugin_description = __('Retrieve a list of countries', 'wpucountrylist');
     }
