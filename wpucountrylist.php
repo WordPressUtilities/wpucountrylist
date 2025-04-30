@@ -4,7 +4,7 @@ defined('ABSPATH') || die;
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.5.1
+Version: 0.6.0
 Author: Darklg
 Author URI: https://darklg.me/
 Text Domain: wpucountrylist
@@ -19,6 +19,7 @@ Thanks: To PLSoucy - https://blog.plsoucy.com/2012/04/iso-3166-country-code-list
 
 class WPUCountryList {
     public $plugin_description;
+    private $textdomain_loaded = false;
 
     public $list = array();
 
@@ -32,6 +33,10 @@ class WPUCountryList {
     }
 
     public function load_plugin_textdomain() {
+        if ($this->textdomain_loaded) {
+            return false;
+        }
+        $this->textdomain_loaded = true;
         $lang_dir = dirname(plugin_basename(__FILE__)) . '/lang/';
         if (strpos(__DIR__, 'mu-plugins') !== false) {
             load_muplugin_textdomain('wpucountrylist', $lang_dir);
@@ -44,6 +49,9 @@ class WPUCountryList {
     public function load_list() {
         if (!empty($this->list)) {
             return false;
+        }
+        if (!$this->textdomain_loaded) {
+            $this->load_plugin_textdomain();
         }
         $this->list = array(
             'AD' => array(
@@ -1834,12 +1842,6 @@ class WPUCountryList {
             $list = $this->move_some_items_first($list, $args['move_first']);
         }
         $list = apply_filters('wpucountrylist_list', $list);
-        $current_country = explode('_', get_locale());
-        $current_country = strtoupper($current_country[0]);
-        $country_code = 'EN';
-        if (array_key_exists($current_country, $this->list)) {
-            $country_code = $current_country;
-        }
         $return_list = array();
         foreach ($list as $code => $country) {
             $return_list[$code] = $country['country'];
