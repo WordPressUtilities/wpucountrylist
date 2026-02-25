@@ -4,7 +4,7 @@ defined('ABSPATH') || die;
 /*
 Plugin Name: WPU Country list
 Description: Retrieve a list of countries
-Version: 0.6.1
+Version: 0.7.0
 Author: Darklg
 Author URI: https://darklg.me/
 Text Domain: wpucountrylist
